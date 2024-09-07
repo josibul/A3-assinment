@@ -4,12 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>assinment-03</title>
-</head>
-<body>
-    <header>
+    <!-- font-manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+<!-- tailwind & daisyui -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- font awsome -->
+<script src="https://kit.fontawesome.com/56f18a503d.js" crossorigin="anonymous"></script>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'clifford':'#da373d',
+          }
+        }
+      }
+    }
+</script>
+<style>
+    .font-manrope{
+  font-family: "Manrope", system-ui;
+}
+</style>
+
+</head>
+<body class=" ">
+    <header class=" bg-gradient-to-b from-[#FFFFFF] lg:mx-32  ">
+        <nav>
+            <div class="navbar bg-base-100 ">
+                <div class="navbar-start">
+                    
+                  <i class="fa-solid fa-arrow-right  rounded-full bg-[#ABEF5F] p-2 bg-auto -rotate-45"></i>
+                 <a class="font-bold text-2xl">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-bold">Home</a></li>
+                   <div class="flex text-[#737373]">
+                    <li><a>Service</a></li>
+                    <li><a>Profolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contacts Us</a></li>
+                   </div>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class=" hidden lg:block">
+                        <button class="btn btn-ghost btn-circle" ><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+
+                    <div class=" hidden lg:block">
+                        <button class="btn btn-ghost btn-circle"><i class="fa-solid fa-cart-shopping"></i> </button>   
+                    </div>             
+                     <div class=" hidden lg:block">
+                    <a class="btn bg-[#ABEF5F] ">Book consults<i class="fa-solid fa-arrow-right  rounded-full bg-neutral-950 text-[#FFFFFF] p-2 bg-auto -rotate-45"></i></a>
+                     </div>
+                     <div class="lg:hidden" >
+                        <label class="btn btn-circle swap swap-rotate">
+                            <!-- this hidden checkbox controls the state -->
+                            <input type="checkbox" />
+                          
+                            <!-- hamburger icon -->
+                            <svg
+                              class="swap-off fill-current"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 512 512">
+                              <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                            </svg>
+                          
+                            <!-- close icon -->
+                            <svg
+                              class="swap-on fill-current"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 512 512">
+                              <polygon
+                                points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                            </svg>
+                          </label>
+                        
+                      </div>
+                </div>
+              </div>
+        </nav>
+        <div class=" ">
+          <div class="container mx-0 flex min-w-full flex-col items-center px-10 py-10">  <img class=" ml-auto mr-auto" src="assets/banner.png" alt="">
+            <h3 class="text-center">A barn house of this design has a striking appearance</h3>
+            <p class="text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal  <br>accents, and large windows that flood the space with natural light.</p>
+            <button class="  py-2 px-3   flex flex-col items-center btn bg-lime-200 rounded-full">View Details <i class="fa-solid fa-arrow-right  rounded-full bg-[#ABEF5F] p-2 bg-auto -rotate-45"></i></button>
+        </div>
+        </div>
     </header>
-    <main>
+    <main class="bg-slate-100">
+    <!-- about us -->
+     <div class="lg:mx-32 ">
+        <img src="assets/Vector.png" alt="">
+        <div class="flex flex-row">
+            <div class="mr-10">
+                <button class="btn rounded-full  h-8 font-bold "><i class="fa-solid fa-arrow-right"></i>About us</button>
+                <h2 class="font-bold text-4xl">We design thoughtful,<br>liveable spaces</h2>
+                <p class="mb-5">The barn house captivates with its blend of rustic charm and 
+                    modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <div class="flex space-x-2.5 bg-white rounded-2xl  p-5 mb-5">
+                    <div>
+                        <img src="assets/commercial.png" alt="">
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-2xl">Commercial</h2>
+                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+
+
+                </div>
+                <div class="flex  space-x-2.5 bg-white rounded-2xl p-5 mb-20"  >
+                    <div>
+                        <img src="assets/residential.png" alt="">
+                    </div>
+                    <div>
+                        <h2  class="font-bold text-2xl">Residential</h2>
+                        <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div>
+                <img src="assets/Rectangle.png" alt="">
+            </div>
+        </div>
+     </div>
+     <!-- work process -->
+      <div class="lg:mx-32">
+        <div class=" flex flex-col items-center ">
+            <button class="btn  rounded-full bg-white  mb-5"> How we works</button>
+            <h2 class=" font-bold text-4xl mb-6">Our Works Process</h2>
+            <p class=" text-center mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            
+        </div>
+        <div class=" grid grid-cols-4 gap-4">
+            <div class="bg-[#E7C1D3] rounded-2xl p-5">
+                <img src="assets/concept.png" alt="">
+                <h3 class="font-bold text-lg ">Concept</h3>
+                <p>The barn house captivates <br>with its blend of rustic charm <br>and modern.</p>
+            </div>
+            <div class="bg-[#EFDA6E] rounded-2xl p-5">
+                <img src="assets/flow-chart.png" alt="">
+                <h3 class="font-bold text-lg ">Design Process</h3>
+                <p>The barn house captivates <br>with its blend of rustic charm <br>and modern.</p>
+            </div>
+            <div class="bg-[#A4DAC3] rounded-2xl p-5">
+                <img src="assets/vision.png" alt="">
+                <h3 class="font-bold text-lg ">Super Vision</h3>
+                <p>The barn house captivates <br>with its blend of rustic charm <br>and modern.</p>
+            </div>
+            <div class="bg-[#77AAEA] rounded-2xl p-5">
+                <img src="assets/budget-planning.png" alt="">
+                <h3 class="font-bold text-lg ">Budget Planning</h3>
+                <p>The barn house captivates <br>with its blend of rustic charm <br>and modern.</p>
+            </div>
+        </div>
+
+
+      </div>
+        
 
     </main>
     <footer>
